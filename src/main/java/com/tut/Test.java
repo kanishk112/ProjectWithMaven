@@ -13,13 +13,13 @@ public class Test {
         SessionFactory sf=cfg.buildSessionFactory();
 
         student st=new student();
-        st.setId(1043);
+        st.setId(143);
         st.setName("Sam");
         st.setCity("Jalandhar");
         System.out.println(st);
 
         student st1=new student();
-        st1.setId(103);
+        st1.setId(13);
         st1.setName("Sam");
         st1.setCity("Jalandhar");
         System.out.println(st1);
@@ -39,6 +39,8 @@ public class Test {
 
         s.save(st);
         s.save(st1);
+        s.save(c);
+        s.save(c1);
 
         tx.commit();
         s.close();
